@@ -98,14 +98,22 @@ function filterByCountMinimum(animals, minimum) {
  */
 function getMostCommonAnimal(animals) {
   for (let i = 0; i < animals.length; i++){
-    if (animals[i].count > 7){
+    if (animals[i].count > animals[1].count){
       return animals[i]
-    } else if (animals[i].kind.includes('Dog')){
-      return animals[i]
-    }
+    } 
+    
+        // for (let i = 0; i < animals.length; i++){
+          // if (animals[i].count > 1){
+          //   return animals[i][0]
+          // }
     }
     return null
-  }
+    }
+    
+  
+  
+
+  
 
 // Do not change anything below this line.
 module.exports = {
@@ -114,3 +122,4 @@ module.exports = {
   filterByCountMinimum,
   getMostCommonAnimal,
 };
+
